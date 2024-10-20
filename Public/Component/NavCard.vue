@@ -18,7 +18,9 @@ defineProps<{
       <a :href="navItem.link" rel="noreferrer" target="_blank" class="group">
         <section>
           <span class="text">
+            <!-- 检查 icon 是否为空 -->
             <span
+                v-if="navItem.icon"
                 class="icon"
                 :style="{
                 backgroundImage: `url(${navItem.icon})`,
@@ -35,6 +37,7 @@ defineProps<{
     </section>
   </div>
 </template>
+
 <style lang="scss" scoped>
 .box {
   display: flex;
@@ -52,17 +55,28 @@ defineProps<{
       background-size: contain;
       width: 20px;
       height: 20px;
+      margin-right: 10px;  // 添加间距，确保 icon 和 text 不会贴在一起
     }
-    &:hover{
-      transform:translateY(-5px);
+    &:hover {
+      transform: translateY(-5px);
       .text {
         color: var(--vp-c-primary);
       }
     }
   }
   .text {
-    display: block;
+    display: inline-flex;
+    align-items: center;
     color: var(--vp-c-text-1);
+    margin-left: 0;
+
+    /* 当有 icon 时，text 的 margin-left 为 0，否则保持默认对齐 */
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+    }
   }
   .desc {
     display: block;
@@ -70,3 +84,4 @@ defineProps<{
   }
 }
 </style>
+
