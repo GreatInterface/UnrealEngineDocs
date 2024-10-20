@@ -9,35 +9,27 @@
 const CPP: navItem[] = [
     {
         id: 1,
-        text: "css奇思妙想",
-        link: "http://chokcoco.github.io/magicCss/html/index.html",
-        icon: "https://www.91sotu.com/logo.png",
-        desc: "CSS3 奇思妙想，使用 CSS3 在单个标签内实现各类图形。",
+        text: "Template",
+        link: "/UnrealEngineDocs/Context/C++/Template",
+        icon: "",
+        desc: "模板",
     },
 ];
 
 const UnrealEngine: navItem[] = [
     {
         id: 1,
-        text: "css奇思妙想",
-        link: "http://chokcoco.github.io/magicCss/html/index.html",
-        icon: "https://www.91sotu.com/logo.png",
-        desc: "CSS3 奇思妙想，使用 CSS3 在单个标签内实现各类图形。",
-    },
-
-    {
-        id: 2,
         text: "Core",
         desc: "Runtime/Core",
-        link: "/UnrealEngine/Core/",
+        link: "/UnrealEngineDocs/Context/UnrealEngine/Core/",
         icon: "",
     },
 
     {
-        id: 3,
+        id: 2,
         text: "Lyra",
         desc: "官方演示项目",
-        link: "/UnrealEngine/Lyra/",
+        link: "/UnrealEngineDocs/Context/UnrealEngine/Lyra/",
         icon: "",
     },
 
