@@ -35,6 +35,12 @@ export default defineConfig({
     footer: {
       copyright:"Copyright @ 2024-Present by Kyro"
     }
-  }
+  },
+
+  locales: {
+    root: {
+        label: "简体中文",
+        lang: "zh-CN" },
+  },
 
 })
