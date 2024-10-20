@@ -3,6 +3,9 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+
+  base: "/UnrealEngineDocs",
+
   title: "Welcome to Kyro Unreal Engine Blog",
   description: "A VitePress Site",
   themeConfig: {
