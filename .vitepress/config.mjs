@@ -58,7 +58,7 @@ export default defineConfig({
 
     //底部配置
     footer: {
-      copyright:"Kyro @ 2024-Present"
+      copyright:"Copyright @ 2024-Present by Kyro"
     }
   }
 
