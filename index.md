@@ -9,6 +9,6 @@ hero:
   actions:
     - theme: brand
       text: Start
-      link: /markdown-examples
+      link: "/Context/欢迎来到我的文档.md"
 ---
 
